@@ -1,0 +1,16 @@
+# General
+model        = "gpt-4o"
+category_id  = 1            # Film & Animation
+tags         = ["kids", "fun", "educational"]
+
+# Upload behaviour
+privacy      = "public"     # public | unlisted | private
+retry_limit  = 5
+
+# OpenAI prompt template
+prompt       = """
+You are a children-content copywriter. Create an exciting, G-rated YouTube
+title (max 100 chars) and a 2-sentence description (max 400 chars)
+for a video named '{filename}'. Use upbeat language, emojis are OK but no hashtags.
+Return as two lines: first the title, second the description.
+"""
